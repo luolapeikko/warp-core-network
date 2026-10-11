@@ -1,4 +1,4 @@
-import {ConduitStatus} from '../conduit/ConduitStatus';
+import type {ConduitStatus} from '../conduit/ConduitStatus';
 
 export type CubeConduitInfo<ConduitType extends string = string> = {
 	readonly uuid: string;
