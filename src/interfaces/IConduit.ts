@@ -1,8 +1,8 @@
-import TypedEmitter from 'typed-emitter';
-import {ConduitEvents} from '../types/conduit/ConduitEvent';
-import {ConduitStatus} from '../types/conduit/ConduitStatus';
+import type {EventEmitter} from 'events';
+import type {ConduitEvents} from '../types/conduit/ConduitEvent';
+import type {ConduitStatus} from '../types/conduit/ConduitStatus';
 
-export interface IConduit<ConduitType extends string, ConduitDataType> extends TypedEmitter<ConduitEvents<ConduitDataType>> {
+export interface IConduit<ConduitType extends string, ConduitDataType> extends EventEmitter<ConduitEvents<ConduitDataType>> {
 	readonly _t: 'conduit';
 	readonly uuid: string;
 	readonly type: ConduitType;

@@ -1,5 +1,5 @@
 export type CubeServiceEvents = {
-	addConduit: (conduit: string) => void;
-	updateConduit: (conduit: string) => void;
-	removeConduit: (conduit: string) => void;
+	addConduit: [conduit: string];
+	updateConduit: [conduit: string];
+	removeConduit: [conduit: string];
 };

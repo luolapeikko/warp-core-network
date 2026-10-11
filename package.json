@@ -4,20 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/chai": "^4.3.12",
-    "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.24",
-    "chai": "^5.1.0",
-    "mocha": "^10.3.0",
-    "ts-node": "^10.9.2",
-    "typed-emitter": "^2.1.0",
-    "typescript": "^5.3.3"
+    "@biomejs/biome": "^2.5.15",
+    "@types/node": "^24.19.2",
+    "@vitest/coverage-v8": "^5.0.3",
+    "c8": "^12.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
   },
-  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501"
+  "packageManager": "pnpm@12.11.2+sha512.25a51652a196785af5f28bda6dfe8dc582ebefa4ac1d180221ce1390231c5fb76637822ea4b6e4633ce74acdcb0a77f725af11bad38177fdeddaee818a955cb9"
 }

@@ -1,7 +1,7 @@
-import {ConduitStatus} from './ConduitStatus';
+import type {ConduitStatus} from './ConduitStatus';
 
 export type ConduitEvents<ConduitDataType> = {
-	statusChange: (error: ConduitStatus) => void;
-	message: (channel: string, data: ConduitDataType) => void;
-	error: (error: Error) => void;
+	statusChange: [error: ConduitStatus];
+	message: [channel: string, data: ConduitDataType];
+	error: [error: Error];
 };

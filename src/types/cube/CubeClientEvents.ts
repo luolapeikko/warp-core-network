@@ -1,6 +1,6 @@
-import {CubeClientStatus} from './CubeClientStatus';
+import type {CubeClientStatus} from './CubeClientStatus';
 
 export type CubeClientEvents = {
-	status: (error: CubeClientStatus) => void;
-	error: (error: Error) => void;
+	status: [error: CubeClientStatus];
+	error: [error: Error];
 };
